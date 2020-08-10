@@ -28,14 +28,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MSCrashesDelegate, MSDist
         MSDistribute.setDelegate(self)
         MSPush.setDelegate(self)
         MSAppCenter.setLogLevel(MSLogLevel.verbose)
-        
-        MSAppCenter.start("874aa896-bf7e-4776-8f86-492e0fb349fd", withServices:[
+        MSAppCenter.start("9c8c979a-cf70-417c-bb42-78dae74222be", withServices:[
             MSAnalytics.self,
             MSCrashes.self,
             MSPush.self,
             MSDistribute.self
             ])
-        
+        MSAppCenter.setLogUrl("https://in-integration.dev.avalanch.es");
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyKilometer;
         locationManager.requestWhenInUseAuthorization()
