@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MSCrashesDelegate, MSDist
         MSDistribute.setDelegate(self)
         MSPush.setDelegate(self)
         MSAppCenter.setLogLevel(MSLogLevel.verbose)
-        MSAppCenter.start("9c8c979a-cf70-417c-bb42-78dae74222be", withServices:[
+        MSAppCenter.start("b3466feb-d737-4a14-a60d-d4a4bb3c6bc2", withServices:[
             MSAnalytics.self,
             MSCrashes.self,
             MSPush.self,
