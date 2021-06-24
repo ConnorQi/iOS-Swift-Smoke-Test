@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43E9E51A268425C300A30D28 /* AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E9E49A268425AF00A30D28 /* AppCenter.framework */; };
+		43E9E51B268425C300A30D28 /* AppCenter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43E9E49A268425AF00A30D28 /* AppCenter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		43E9E51C268425C500A30D28 /* AppCenterAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E9E499268425AF00A30D28 /* AppCenterAnalytics.framework */; };
+		43E9E51D268425C500A30D28 /* AppCenterAnalytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43E9E499268425AF00A30D28 /* AppCenterAnalytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		43E9E51E268425C600A30D28 /* AppCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E9E518268425AF00A30D28 /* AppCenterCrashes.framework */; };
+		43E9E51F268425C600A30D28 /* AppCenterCrashes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43E9E518268425AF00A30D28 /* AppCenterCrashes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		43E9E520268425C800A30D28 /* AppCenterDistribute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E9E517268425AF00A30D28 /* AppCenterDistribute.framework */; };
+		43E9E521268425C800A30D28 /* AppCenterDistribute.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43E9E517268425AF00A30D28 /* AppCenterDistribute.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		43E9E524268425CB00A30D28 /* AppCenterDistributeResources.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 43E9E519268425AF00A30D28 /* AppCenterDistributeResources.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A7173FD23151E2300F13749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7173FC23151E2300F13749 /* AppDelegate.swift */; };
 		4A7173FF23151E2300F13749 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7173FE23151E2300F13749 /* ViewController.swift */; };
 		4A71740223151E2300F13749 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A71740023151E2300F13749 /* Main.storyboard */; };
@@ -40,6 +49,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				43E9E51D268425C500A30D28 /* AppCenterAnalytics.framework in Embed Frameworks */,
+				43E9E51B268425C300A30D28 /* AppCenter.framework in Embed Frameworks */,
+				43E9E521268425C800A30D28 /* AppCenterDistribute.framework in Embed Frameworks */,
+				43E9E51F268425C600A30D28 /* AppCenterCrashes.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +63,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				43E9E524268425CB00A30D28 /* AppCenterDistributeResources.bundle in Embed PlugIns */,
 			);
 			name = "Embed PlugIns";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,6 +71,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		43E9E499268425AF00A30D28 /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterAnalytics.framework; path = "AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework"; sourceTree = "<group>"; };
+		43E9E49A268425AF00A30D28 /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenter.framework; path = "AppCenter-SDK-Apple/iOS/AppCenter.framework"; sourceTree = "<group>"; };
+		43E9E517268425AF00A30D28 /* AppCenterDistribute.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterDistribute.framework; path = "AppCenter-SDK-Apple/iOS/AppCenterDistribute.framework"; sourceTree = "<group>"; };
+		43E9E518268425AF00A30D28 /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterCrashes.framework; path = "AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework"; sourceTree = "<group>"; };
+		43E9E519268425AF00A30D28 /* AppCenterDistributeResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AppCenterDistributeResources.bundle; path = "AppCenter-SDK-Apple/iOS/AppCenterDistributeResources.bundle"; sourceTree = "<group>"; };
 		4A7173F923151E2300F13749 /* ios-swift-release-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-swift-release-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7173FC23151E2300F13749 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A7173FE23151E2300F13749 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +97,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E9E51C268425C500A30D28 /* AppCenterAnalytics.framework in Frameworks */,
+				43E9E51A268425C300A30D28 /* AppCenter.framework in Frameworks */,
+				43E9E520268425C800A30D28 /* AppCenterDistribute.framework in Frameworks */,
+				43E9E51E268425C600A30D28 /* AppCenterCrashes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +177,11 @@
 		9B4F5F5624DD44BA00221C8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43E9E49A268425AF00A30D28 /* AppCenter.framework */,
+				43E9E499268425AF00A30D28 /* AppCenterAnalytics.framework */,
+				43E9E518268425AF00A30D28 /* AppCenterCrashes.framework */,
+				43E9E517268425AF00A30D28 /* AppCenterDistribute.framework */,
+				43E9E519268425AF00A30D28 /* AppCenterDistributeResources.bundle */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -223,7 +251,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = bys;
 				TargetAttributes = {
 					4A7173F823151E2300F13749 = {
@@ -381,6 +409,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -406,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -442,6 +471,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -461,7 +491,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

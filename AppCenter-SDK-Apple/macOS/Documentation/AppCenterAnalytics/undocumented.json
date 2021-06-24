@@ -1,0 +1,75 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/1/s/AppCenter-SDK-Apple/macOS/AppCenter.framework/Versions/A/Headers/MSACAbstractLog.h",
+      "line": 10,
+      "symbol": "MSACAbstractLog",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/1/s/AppCenter-SDK-Apple/macOS/AppCenter.framework/Versions/A/Headers/MSACConstants+Flags.h",
+      "line": 9,
+      "symbol": "MSACFlags",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/1/s/AppCenter-SDK-Apple/macOS/AppCenter.framework/Versions/A/Headers/MSACConstants+Flags.h",
+      "line": 9,
+      "symbol": "MSACFlags",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/1/s/AppCenter-SDK-Apple/macOS/AppCenter.framework/Versions/A/Headers/MSACLogWithProperties.h",
+      "line": 16,
+      "symbol": "MSACLogWithProperties",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/1/s/AppCenter-SDK-Apple/macOS/AppCenterAnalytics.framework/Versions/A/Headers/MSACAnalyticsAuthenticationProvider.h",
+      "line": 31,
+      "symbol": "MSACAnalyticsAuthenticationProvider",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/1/s/AppCenter-SDK-Apple/macOS/AppCenterAnalytics.framework/Versions/A/Headers/MSACAnalyticsAuthenticationProviderDelegate.h",
+      "line": 15,
+      "symbol": "MSACAnalyticsAuthenticationProviderDelegate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/1/s/AppCenter-SDK-Apple/macOS/AppCenterAnalytics.framework/Versions/A/Headers/MSACAnalyticsTransmissionTarget.h",
+      "line": 28,
+      "symbol": "MSACAnalyticsTransmissionTarget",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/1/s/AppCenter-SDK-Apple/macOS/AppCenterAnalytics.framework/Versions/A/Headers/MSACEventLog.h",
+      "line": 17,
+      "symbol": "MSACEventLog",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/1/s/AppCenter-SDK-Apple/macOS/AppCenterAnalytics.framework/Versions/A/Headers/MSACLogWithNameAndProperties.h",
+      "line": 16,
+      "symbol": "MSACLogWithNameAndProperties",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/1/s/AppCenter-SDK-Apple/macOS/AppCenterAnalytics.framework/Versions/A/Headers/MSACPropertyConfigurator.h",
+      "line": 9,
+      "symbol": "MSACPropertyConfigurator",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/1/s/AppCenterAnalytics"
+}

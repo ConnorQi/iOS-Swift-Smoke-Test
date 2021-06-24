@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Protocols  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Section/Protocols" class="dashAnchor"></a>
+    <a title="Protocols  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">AppCenter Docs</a> (27% documented)</p>
+        <p class="header-right"><a href="https://github.com/microsoft/appcenter-sdk-apple"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fdocs.microsoft.com%2Fappcenter%2Fsdk%2Fios%2Fdocsets%2FAppCenter.xml"><img src="img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">AppCenter Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Protocols  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/MSACCustomProperties.html">MSACCustomProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/MSACServiceAbstract.html">MSACServiceAbstract</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:objc(cs)MSACWrapperLogger">MSACWrapperLogger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enumerations.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums.html#/c:@E@MSACHTTPCodesNo">MSACHTTPCodesNo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums.html#/c:@E@MSACInitializationPriority">MSACInitializationPriority</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/MSACLogLevel.html">MSACLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums.html#/c:@E@MSACPriority">MSACPriority</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/MSACChannelGroupProtocol.html">MSACChannelGroupProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/MSACChannelProtocol.html">MSACChannelProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/MSACEnable.html">MSACEnable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/MSACService.html">MSACService</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Protocols</h1>
+            <p>The following protocols are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MSACChannelGroupProtocol"></a>
+                    <a name="//apple_ref/objc/Protocol/MSACChannelGroupProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MSACChannelGroupProtocol">MSACChannelGroupProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>MSACChannelGroupProtocol</code> represents a kind of channel that contains constituent MSACChannelUnit objects. When an operation from the
+<code><a href="Protocols/MSACChannelProtocol.html">MSACChannelProtocol</a></code> is performed on the group, that operation should be propagated to its constituent MSACChannelUnit objects.</p>
+
+                        <a href="Protocols/MSACChannelGroupProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MSACChannelGroupProtocol</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/MSACChannelProtocol.html">MSACChannelProtocol</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">ChannelGroupProtocol</span> <span class="p">:</span> <span class="kt">ChannelProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/microsoft/appcenter-sdk-apple//../AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSACChannelGroupProtocol.h#L27-L83">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MSACChannelProtocol"></a>
+                    <a name="//apple_ref/objc/Protocol/MSACChannelProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MSACChannelProtocol">MSACChannelProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>MSACChannelProtocol</code> contains the essential operations of a channel. Channels are broadly responsible for enqueuing logs to be sent to
+the backend and/or stored on disk.</p>
+
+                        <a href="Protocols/MSACChannelProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MSACChannelProtocol</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="p">,</span> <span class="n"><a href="Protocols/MSACEnable.html">MSACEnable</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">ChannelProtocol</span> <span class="p">:</span> <span class="kt">Enable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/microsoft/appcenter-sdk-apple//../AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSACChannelProtocol.h#L24-L64">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MSACEnable"></a>
+                    <a name="//apple_ref/objc/Protocol/MSACEnable" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MSACEnable">MSACEnable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Protocol to define an instance that can be enabled/disabled.</p>
+
+                        <a href="Protocols/MSACEnable.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MSACEnable</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">Enable</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/microsoft/appcenter-sdk-apple//../AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSACEnable.h#L13-L25">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MSACService"></a>
+                    <a name="//apple_ref/objc/Protocol/MSACService" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MSACService">MSACService</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Protocol declaring service logic.</p>
+
+                        <a href="Protocols/MSACService.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MSACService</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">Service</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/microsoft/appcenter-sdk-apple//../AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSACService.h#L13-L21">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="http://www.microsoft.com" target="_blank" rel="external">Microsoft Corp</a>. All rights reserved. (Last updated: 2021-06-10)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

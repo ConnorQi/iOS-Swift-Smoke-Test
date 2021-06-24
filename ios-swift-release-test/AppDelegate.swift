@@ -12,11 +12,10 @@ import AppCenter
 import AppCenterAnalytics
 import AppCenterCrashes
 import AppCenterDistribute
-import AppCenterPush
 import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, MSCrashesDelegate, MSDistributeDelegate, MSPushDelegate, UNUserNotificationCenterDelegate, CLLocationManagerDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CrashesDelegate, DistributeDelegate, UNUserNotificationCenterDelegate, CLLocationManagerDelegate {
 
     var window: UIWindow?
     private var locationManager : CLLocationManager = CLLocationManager()
@@ -24,21 +23,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MSCrashesDelegate, MSDist
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        MSCrashes.setDelegate(self)
-        MSDistribute.setDelegate(self)
-        MSPush.setDelegate(self)
-        MSAppCenter.setLogLevel(MSLogLevel.verbose)
-        MSAppCenter.start("b3466feb-d737-4a14-a60d-d4a4bb3c6bc2", withServices:[
-            MSAnalytics.self,
-            MSCrashes.self,
-            MSPush.self,
-            MSDistribute.self
+        Crashes.delegate = self
+        Distribute.delegate = self
+        AppCenter.logLevel = .verbose
+        AppCenter.start(withAppSecret: "b3466feb-d737-4a14-a60d-d4a4bb3c6bc2", services:[
+            Analytics.self,
+            Crashes.self,
+            Distribute.self
             ])
-        MSAppCenter.setLogUrl("https://in-integration.dev.avalanch.es");
+        AppCenter.logUrl = "https://in-integration.dev.avalanch.es"
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyKilometer;
         locationManager.requestWhenInUseAuthorization()
-        MSCrashes.setUserConfirmationHandler({ (errorReports: [MSErrorReport]) in
+        Crashes.userConfirmationHandler = ({ (errorReports: [ErrorReport]) in
             
             // Your code to present your UI to the user, e.g. an UIAlertController.
             let alertController = UIAlertController(title: "Sorry about that!",
@@ -46,15 +43,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MSCrashesDelegate, MSDist
                                                     preferredStyle:.alert)
             
             alertController.addAction(UIAlertAction(title: "Don't send", style: .cancel) {_ in
-                MSCrashes.notify(with: .dontSend)
+                Crashes.notify(with: .dontSend)
             })
             
             alertController.addAction(UIAlertAction(title: "Send", style: .default) {_ in
-                MSCrashes.notify(with: .send)
+                Crashes.notify(with: .send)
             })
             
             alertController.addAction(UIAlertAction(title: "Always send", style: .default) {_ in
-                MSCrashes.notify(with: .always)
+                Crashes.notify(with: .always)
             })
             
             // Show the alert controller.
@@ -86,45 +83,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MSCrashesDelegate, MSDist
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    func crashes(_ crashes: MSCrashes!, shouldProcessErrorReport errorReport: MSErrorReport!) -> Bool {
+    func crashes(_ crashes: Crashes, shouldProcess errorReport: ErrorReport) -> Bool {
         
         // return true if the crash report should be processed, otherwise false.
         return true
     }
     
-    func crashes(_ crashes: MSCrashes!, willSend errorReport: MSErrorReport!) {
+    func crashes(_ crashes: Crashes, willSend errorReport: ErrorReport) {
     }
     
-    func crashes(_ crashes: MSCrashes!, didSucceedSending errorReport: MSErrorReport!) {
+    func crashes(_ crashes: Crashes, didSucceedSending errorReport: ErrorReport) {
     }
     
-    func crashes(_ crashes: MSCrashes!, didFailSending errorReport: MSErrorReport!, withError error: Error!) {
+    func crashes(_ crashes: Crashes, didFailSending errorReport: ErrorReport, withError error: Error?) {
     }
     
-    func attachments(with crashes: MSCrashes, for errorReport: MSErrorReport) -> [MSErrorAttachmentLog] {
-        let attachment1 = MSErrorAttachmentLog.attachment(withText: "Hello world!", filename: "hello.txt")
-        let attachment2 = MSErrorAttachmentLog.attachment(withBinary: "Fake image".data(using: String.Encoding.utf8), filename: nil, contentType: "image/jpeg")
+    func attachments(with crashes: Crashes, for errorReport: ErrorReport) -> [ErrorAttachmentLog]? {
+        let attachment1 = ErrorAttachmentLog.attachment(withText: "\(UIDevice.current.name)", filename: "hello.txt")
+        let attachment2 = ErrorAttachmentLog.attachment(withBinary: "Fake image".data(using: String.Encoding.utf8), filename: nil, contentType: "image/jpeg")
         return [attachment1!, attachment2!]
-    }
-
-    func push(_ push: MSPush!, didReceive pushNotification: MSPushNotification!) {
-        let title: String = pushNotification.title ?? ""
-        var message: String = pushNotification.message ?? ""
-        var customData: String = ""
-        for item in pushNotification.customData {
-            customData =  ((customData.isEmpty) ? "" : "\(customData), ") + "\(item.key): \(item.value)"
-        }
-        if (UIApplication.shared.applicationState == .background) {
-            NSLog("Notification received in background, title: \"\(title)\", message: \"\(message)\", custom data: \"\(customData)\"");
-        } else {
-            message =  message + ((customData.isEmpty) ? "" : "\n\(customData)")
-            
-            let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: .cancel))
-            
-            // Show the alert controller.
-            self.window?.rootViewController?.present(alertController, animated: true)
-        }
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -137,7 +114,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MSCrashesDelegate, MSDist
         let userLocation:CLLocation = locations[0] as CLLocation
         CLGeocoder().reverseGeocodeLocation(userLocation) { (placemarks, error) in
             if error == nil {
-                MSAppCenter.setCountryCode(placemarks?.first?.isoCountryCode)
+                AppCenter.countryCode = placemarks?.first?.isoCountryCode ?? ""
             }
         }
     }
@@ -145,7 +122,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MSCrashesDelegate, MSDist
     func locationManager(_ Manager: CLLocationManager, didFailWithError error: Error) {
         print("Failed to find user's location: \(error.localizedDescription)")
     }
-    func distribute(_ distribute: MSDistribute!, releaseAvailableWith details: MSReleaseDetails!) -> Bool {
+    
+    func distribute(_ distribute: Distribute, releaseAvailableWith details: ReleaseDetails) -> Bool {
         
         // Your code to present your UI to the user, e.g. an UIAlertController.
         let alertController = UIAlertController(title: "Update available.",
@@ -153,11 +131,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MSCrashesDelegate, MSDist
                                                 preferredStyle:.alert)
         
         alertController.addAction(UIAlertAction(title: "Update", style: .cancel) {_ in
-            MSDistribute.notify(.update)
+            Distribute.notify(.update)
         })
         
         alertController.addAction(UIAlertAction(title: "Postpone", style: .default) {_ in
-            MSDistribute.notify(.postpone)
+            Distribute.notify(.postpone)
         })
         
         // Show the alert controller.
@@ -166,4 +144,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MSCrashesDelegate, MSDist
     }
 
 }
-

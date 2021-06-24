@@ -1,0 +1,47 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/1/s/AppCenter-SDK-Apple/iOS/AppCenter.framework/Headers/MSACAbstractLog.h",
+      "line": 10,
+      "symbol": "MSACAbstractLog",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/1/s/AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework/Headers/MSACCrashes.h",
+      "line": 70,
+      "symbol": "MSACCrashes",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/1/s/AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework/Headers/MSACCrashesDelegate.h",
+      "line": 13,
+      "symbol": "MSACCrashesDelegate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/1/s/AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework/Headers/MSACErrorAttachmentLog+Utility.h",
+      "line": 11,
+      "symbol": "MSACMSACErrorLogAttachmentLogUtilityCategory",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/1/s/AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework/Headers/MSACErrorAttachmentLog+Utility.h",
+      "line": 13,
+      "symbol": "MSACErrorAttachmentLog(Utility)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/1/s/AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework/Headers/MSACErrorReport.h",
+      "line": 9,
+      "symbol": "MSACErrorReport",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/1/s/AppCenterCrashes"
+}
