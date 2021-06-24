@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CrashesDelegate, Distribu
         Crashes.delegate = self
         Distribute.delegate = self
         AppCenter.logLevel = .verbose
-        AppCenter.start(withAppSecret: "b3466feb-d737-4a14-a60d-d4a4bb3c6bc2", services:[
+        AppCenter.start(withAppSecret: "f75926f7-47d1-46a9-8940-b2c06729ddf7", services:[
             Analytics.self,
             Crashes.self,
             Distribute.self
