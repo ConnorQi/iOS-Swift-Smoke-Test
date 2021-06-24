@@ -8,13 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		43E9E51A268425C300A30D28 /* AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E9E49A268425AF00A30D28 /* AppCenter.framework */; };
-		43E9E51B268425C300A30D28 /* AppCenter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43E9E49A268425AF00A30D28 /* AppCenter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43E9E51C268425C500A30D28 /* AppCenterAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E9E499268425AF00A30D28 /* AppCenterAnalytics.framework */; };
-		43E9E51D268425C500A30D28 /* AppCenterAnalytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43E9E499268425AF00A30D28 /* AppCenterAnalytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43E9E51E268425C600A30D28 /* AppCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E9E518268425AF00A30D28 /* AppCenterCrashes.framework */; };
-		43E9E51F268425C600A30D28 /* AppCenterCrashes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43E9E518268425AF00A30D28 /* AppCenterCrashes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43E9E520268425C800A30D28 /* AppCenterDistribute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E9E517268425AF00A30D28 /* AppCenterDistribute.framework */; };
-		43E9E521268425C800A30D28 /* AppCenterDistribute.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43E9E517268425AF00A30D28 /* AppCenterDistribute.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43E9E524268425CB00A30D28 /* AppCenterDistributeResources.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 43E9E519268425AF00A30D28 /* AppCenterDistributeResources.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A7173FD23151E2300F13749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7173FC23151E2300F13749 /* AppDelegate.swift */; };
 		4A7173FF23151E2300F13749 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7173FE23151E2300F13749 /* ViewController.swift */; };
@@ -43,20 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9B4F5F6824DD44BB00221C8F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				43E9E51D268425C500A30D28 /* AppCenterAnalytics.framework in Embed Frameworks */,
-				43E9E51B268425C300A30D28 /* AppCenter.framework in Embed Frameworks */,
-				43E9E521268425C800A30D28 /* AppCenterDistribute.framework in Embed Frameworks */,
-				43E9E51F268425C600A30D28 /* AppCenterCrashes.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9B4F5F6924DD44BB00221C8F /* Embed PlugIns */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,7 +178,6 @@
 				4A7173F523151E2300F13749 /* Sources */,
 				4A7173F623151E2300F13749 /* Frameworks */,
 				4A7173F723151E2300F13749 /* Resources */,
-				9B4F5F6824DD44BB00221C8F /* Embed Frameworks */,
 				9B4F5F6924DD44BB00221C8F /* Embed PlugIns */,
 			);
 			buildRules = (
