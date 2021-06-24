@@ -14,17 +14,6 @@
 		4A71740723151E2400F13749 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A71740523151E2400F13749 /* LaunchScreen.storyboard */; };
 		4A71741223151E2400F13749 /* ios_swift_release_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A71741123151E2400F13749 /* ios_swift_release_testTests.swift */; };
 		4A71741D23151E2400F13749 /* ios_swift_release_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A71741C23151E2400F13749 /* ios_swift_release_testUITests.swift */; };
-		9B4F5F5D24DD44BB00221C8F /* AppCenterDistribute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4F5F5724DD44BB00221C8F /* AppCenterDistribute.framework */; };
-		9B4F5F5E24DD44BB00221C8F /* AppCenterDistribute.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4F5F5724DD44BB00221C8F /* AppCenterDistribute.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9B4F5F5F24DD44BB00221C8F /* AppCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4F5F5824DD44BB00221C8F /* AppCenterCrashes.framework */; };
-		9B4F5F6024DD44BB00221C8F /* AppCenterCrashes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4F5F5824DD44BB00221C8F /* AppCenterCrashes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9B4F5F6124DD44BB00221C8F /* AppCenterAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4F5F5924DD44BB00221C8F /* AppCenterAnalytics.framework */; };
-		9B4F5F6224DD44BB00221C8F /* AppCenterAnalytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4F5F5924DD44BB00221C8F /* AppCenterAnalytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9B4F5F6324DD44BB00221C8F /* AppCenterDistributeResources.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 9B4F5F5A24DD44BB00221C8F /* AppCenterDistributeResources.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9B4F5F6424DD44BB00221C8F /* AppCenterPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4F5F5B24DD44BB00221C8F /* AppCenterPush.framework */; };
-		9B4F5F6524DD44BB00221C8F /* AppCenterPush.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4F5F5B24DD44BB00221C8F /* AppCenterPush.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9B4F5F6624DD44BB00221C8F /* AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4F5F5C24DD44BB00221C8F /* AppCenter.framework */; };
-		9B4F5F6724DD44BB00221C8F /* AppCenter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4F5F5C24DD44BB00221C8F /* AppCenter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,11 +40,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9B4F5F5E24DD44BB00221C8F /* AppCenterDistribute.framework in Embed Frameworks */,
-				9B4F5F6724DD44BB00221C8F /* AppCenter.framework in Embed Frameworks */,
-				9B4F5F6524DD44BB00221C8F /* AppCenterPush.framework in Embed Frameworks */,
-				9B4F5F6224DD44BB00221C8F /* AppCenterAnalytics.framework in Embed Frameworks */,
-				9B4F5F6024DD44BB00221C8F /* AppCenterCrashes.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +50,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				9B4F5F6324DD44BB00221C8F /* AppCenterDistributeResources.bundle in Embed PlugIns */,
 			);
 			name = "Embed PlugIns";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,12 +71,6 @@
 		4A71741C23151E2400F13749 /* ios_swift_release_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_swift_release_testUITests.swift; sourceTree = "<group>"; };
 		4A71741E23151E2400F13749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AAE65032327930F00945D6A /* ios-swift-release-test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ios-swift-release-test.entitlements"; sourceTree = "<group>"; };
-		9B4F5F5724DD44BB00221C8F /* AppCenterDistribute.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterDistribute.framework; path = "AppCenter-SDK-Apple/iOS/AppCenterDistribute.framework"; sourceTree = "<group>"; };
-		9B4F5F5824DD44BB00221C8F /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterCrashes.framework; path = "AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework"; sourceTree = "<group>"; };
-		9B4F5F5924DD44BB00221C8F /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterAnalytics.framework; path = "AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework"; sourceTree = "<group>"; };
-		9B4F5F5A24DD44BB00221C8F /* AppCenterDistributeResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AppCenterDistributeResources.bundle; path = "AppCenter-SDK-Apple/iOS/AppCenterDistributeResources.bundle"; sourceTree = "<group>"; };
-		9B4F5F5B24DD44BB00221C8F /* AppCenterPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterPush.framework; path = "AppCenter-SDK-Apple/iOS/AppCenterPush.framework"; sourceTree = "<group>"; };
-		9B4F5F5C24DD44BB00221C8F /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenter.framework; path = "AppCenter-SDK-Apple/iOS/AppCenter.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B4F5F5D24DD44BB00221C8F /* AppCenterDistribute.framework in Frameworks */,
-				9B4F5F6624DD44BB00221C8F /* AppCenter.framework in Frameworks */,
-				9B4F5F6424DD44BB00221C8F /* AppCenterPush.framework in Frameworks */,
-				9B4F5F6124DD44BB00221C8F /* AppCenterAnalytics.framework in Frameworks */,
-				9B4F5F5F24DD44BB00221C8F /* AppCenterCrashes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,12 +154,6 @@
 		9B4F5F5624DD44BA00221C8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9B4F5F5C24DD44BB00221C8F /* AppCenter.framework */,
-				9B4F5F5924DD44BB00221C8F /* AppCenterAnalytics.framework */,
-				9B4F5F5824DD44BB00221C8F /* AppCenterCrashes.framework */,
-				9B4F5F5724DD44BB00221C8F /* AppCenterDistribute.framework */,
-				9B4F5F5A24DD44BB00221C8F /* AppCenterDistributeResources.bundle */,
-				9B4F5F5B24DD44BB00221C8F /* AppCenterPush.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
